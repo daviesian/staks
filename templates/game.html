@@ -1,0 +1,65 @@
+<div style="display:inline-block;">
+	<h3>Players</h3>
+	<ul>
+		{% for p in game.players %}
+			<li>
+				{% if player == p %}
+					<b>{{p.name}}</b>
+				{% else %}
+					<a href="/?player={{loop.index0}}">{{p.name}}</a>
+				{% endif %}{% if p == game.get_current_player() %}*{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+</div>
+
+{% if player %}
+	<div style="display:inline-block;vertical-align: top;">
+		{% include "player.html" %}
+	</div>
+{% endif %}
+
+
+<h5>Staks</h5>
+{% for p in game.players %}
+	<div style="display:inline-block;vertical-align: top;">
+		<h6>{{p.name}}</h6>
+		<ul>
+			{% for c in p.stak %}
+				<li>
+					{% if c.face_up %} 
+						{{c.name}} - Power {{c.power}} {% if c.health < c.power %}(Health {{c.health}}){% endif %}
+						{% if loop.first and player == game.get_current_player() and p == player %}
+							<button type="button" onclick="go('/discard_stak_card')">Discard</button>
+
+							{% for target in game.players%}
+								{% if game.can_attack(loop.index0) %}
+									<button type="button" onclick="go('/attack?targetPlayerIndex={{loop.index0}}')">Attack {{target.name}}</button>
+								{% endif %}
+							{% endfor %}
+						{% endif %}
+					{% else %}
+						[HIDDEN]
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endfor %}
+
+<h5>Discarded - {{game.discarded | length}}</h5>
+<ul>
+{% for c in game.discarded %}
+	<li>{{c.name}} - Power {{c.power}}</li>
+{% endfor %}
+</ul>
+
+
+
+
+
+
+
+
+
+

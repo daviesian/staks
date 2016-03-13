@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <title>Staks</title>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class=page>
+
+<script>
+    function go(action)
+    {
+        {% if pid %}
+          if (action.indexOf("?") > -1) {
+            action = action + "&player={{pid}}"
+          } else {
+            action = action + "?player={{pid}}"
+          }
+        {% endif %}
+        document.getElementById('actionForm').action = action;
+        document.getElementById('actionForm').submit();
+    }
+
+    var x = new XMLHttpRequest();
+    x.onload = function() {
+      document.location.reload();
+    };
+    x.open("GET", "/notify");
+    x.send();
+</script>
+
+    <form id="actionForm" method="POST"></form>
+
+    <h1>Staks</h1>
+
+    {% if game %}
+      <button type="button" onclick="go('/end_game')" style="vertical-align: top;">End Game</button>
+      {% include "game.html" %}
+    {% else %}
+      <button type="button" onclick="go('/new_game')">New Game</button>    
+    {% endif %}
+  </div>
+</body>
+</html>

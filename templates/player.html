@@ -1,0 +1,18 @@
+<h3>{{player.name}}</h3>
+
+<h5>Hand</h5>
+<ul>
+	{% for c in player.hand %}
+		<li>
+			{{c.name}} - Power {{c.power}}
+			{% if player == game.get_current_player() %}
+				<button type="button" onclick="go('/play_card?index={{loop.index0}}')">Play</button>
+				<button type="button" onclick="go('/discard_hand_card?index={{loop.index0}}')">Discard</button>
+			{% endif %}
+		</li>
+	{% endfor %}
+</ul>
+{% if player == game.get_current_player() and game.can_end_turn() %}
+	<button type="button" onclick="go('/next_turn')">End turn</button>
+{% endif %}
+
