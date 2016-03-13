@@ -3,84 +3,420 @@
         "name": "Core",
         "power": 1,
         "rank": 1,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 1,
         "rank": 1,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 2,
         "rank": 2,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 2,
         "rank": 2,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 3,
         "rank": 3,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 3,
         "rank": 3,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 4,
         "rank": 4,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 4,
         "rank": 4,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 5,
         "rank": 5,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 5,
         "rank": 5,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 6,
         "rank": 6,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
     },
     {
         "name": "Core",
         "power": 6,
         "rank": 6,
-        "effect": "none",
-        "entryEffect": "none"
+        "effect": null,
+        "entryEffect": null
+    },
+    {
+        "name": "Shot V1",
+        "power": 0,
+        "rank": 1,
+        "effect": null,
+        "entryEffect": "Choose a top card: It takes 1 damage."
+    },
+    {
+        "name": "Shot V1",
+        "power": 0,
+        "rank": 1,
+        "effect": null,
+        "entryEffect": "Choose a top card: It takes 1 damage."
+    },
+    {
+        "name": "Shot V1",
+        "power": 0,
+        "rank": 1,
+        "effect": null,
+        "entryEffect": "Choose a top card: It takes 1 damage."
+    },
+    {
+        "name": "Shot V1",
+        "power": 0,
+        "rank": 1,
+        "effect": null,
+        "entryEffect": "Choose a top card: It takes 1 damage."
+    },
+    {
+        "name": "Shot V2",
+        "power": 0,
+        "rank": 2,
+        "effect": null,
+        "entryEffect": "Choose a top card: It takes 2 damage."
+    },
+    {
+        "name": "Shot V2",
+        "power": 0,
+        "rank": 2,
+        "effect": null,
+        "entryEffect": "Choose a top card: It takes 2 damage."
+    },
+    {
+        "name": "Shot V3",
+        "power": 0,
+        "rank": 3,
+        "effect": null,
+        "entryEffect": "Choose a top card: It takes 3 damage."
+    },
+    {
+        "name": "Shot V3",
+        "power": 0,
+        "rank": 3,
+        "effect": null,
+        "entryEffect": "Choose a top card: It takes 3 damage."
+    },
+    {
+        "name": "Shot V4",
+        "power": 0,
+        "rank": 4,
+        "effect": null,
+        "entryEffect": "Choose a top card: It takes 4 damage."
+    },
+    {
+        "name": "Shot V4",
+        "power": 0,
+        "rank": 4,
+        "effect": null,
+        "entryEffect": "Choose a top card: It takes 4 damage."
+    },
+    {
+        "name": "Stomp",
+        "power": 5,
+        "rank": 4,
+        "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
+        "entryEffect": null
+    },
+    {
+        "name": "Stomp",
+        "power": 5,
+        "rank": 4,
+        "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
+        "entryEffect": null
+    },
+    {
+        "name": "Stomp",
+        "power": 6,
+        "rank": 5,
+        "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
+        "entryEffect": null
+    },
+    {
+        "name": "Stomp",
+        "power": 6,
+        "rank": 5,
+        "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
+        "entryEffect": null
+    },
+    {
+        "name": "Stomp",
+        "power": 7,
+        "rank": 6,
+        "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it gets dies.",
+        "entryEffect": null
+    },
+    {
+        "name": "Stomp",
+        "power": 7,
+        "rank": 6,
+        "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
+        "entryEffect": null
+    },
+    {
+        "name": "Bash",
+        "power": 2,
+        "rank": 5,
+        "effect": "Bash Damage: Damage a card and the bottom card of its Stak must be discarded.",
+        "entryEffect": null
+    },
+    {
+        "name": "Bash",
+        "power": 2,
+        "rank": 5,
+        "effect": "Bash Damage: Damage a card and the bottom card of its Stak must be discarded.",
+        "entryEffect": null
+    },
+    {
+        "name": "Bash",
+        "power": 3,
+        "rank": 6,
+        "effect": "Bash Damage: Damage a card and the bottom card of its Stak must be discarded.",
+        "entryEffect": null
+    },
+    {
+        "name": "Bash",
+        "power": 3,
+        "rank": 6,
+        "effect": "Bash Damage: Damage a card and the bottom card of its Stak must be discarded.",
+        "entryEffect": null
+    },
+    {
+        "name": "Spike",
+        "power": 1,
+        "rank": 4,
+        "effect": "Spike Damage: Damage a card and the first card below it must be discarded.",
+        "entryEffect": null
+    },
+    {
+        "name": "Spike",
+        "power": 2,
+        "rank": 5,
+        "effect": "Spike Damage: Damage a card and the first card below it must be discarded.",
+        "entryEffect": null
+    },
+    {
+        "name": "Spike",
+        "power": 3,
+        "rank": 6,
+        "effect": "Spike Damage: Damage a card and the first card below it must be discarded.",
+        "entryEffect": null
+    },
+    {
+        "name": "Fatal",
+        "power": 1,
+        "rank": 3,
+        "effect": "Fatal Damage: Discard any card damaged by this one.",
+        "entryEffect": null
+    },
+    {
+        "name": "Fatal",
+        "power": 1,
+        "rank": 3,
+        "effect": "Fatal Damage: Discard any card damaged by this one.",
+        "entryEffect": null
+    },
+    {
+        "name": "Fatal",
+        "power": 1,
+        "rank": 3,
+        "effect": "Fatal Damage: Discard any card damaged by this one.",
+        "entryEffect": null
+    },
+    {
+        "name": "Fatal",
+        "power": 1,
+        "rank": 3,
+        "effect": "Fatal Damage: Discard any card damaged by this one.",
+        "entryEffect": null
+    },
+    {
+        "name": "Reaper",
+        "power": 1,
+        "rank": 5,
+        "effect": "Choose any other top card: Discard it.",
+        "entryEffect": null
+    },
+    {
+        "name": "Reaper",
+        "power": 1,
+        "rank": 5,
+        "effect": "Choose any other top card: Discard it.",
+        "entryEffect": null
+    },
+    {
+        "name": "Clumsy",
+        "power": 6,
+        "rank": 3,
+        "effect": null,
+        "entryEffect": "Bash this Stak: Discard the bottom card of this Stak."
+    },
+    {
+        "name": "Clumsy",
+        "power": 6,
+        "rank": 3,
+        "effect": null,
+        "entryEffect": "Bash this Stak: Discard the bottom card of this Stak."
+    },
+    {
+        "name": "Bountiful",
+        "power": 1,
+        "rank": 4,
+        "effect": null,
+        "entryEffect": "Draw a card."
+    },
+    {
+        "name": "Bountiful",
+        "power": 2,
+        "rank": 5,
+        "effect": null,
+        "entryEffect": "Draw a card."
+    },
+    {
+        "name": "Bountiful",
+        "power": 3,
+        "rank": 6,
+        "effect": null,
+        "entryEffect": "Draw a card."
+    },
+    {
+        "name": "Trip",
+        "power": 0,
+        "rank": 1,
+        "effect": null,
+        "entryEffect": "Choose a top card: It falls one place in its Stak."
+    },
+    {
+        "name": "Trip",
+        "power": 0,
+        "rank": 1,
+        "effect": null,
+        "entryEffect": "Choose a top card: It falls one place in its Stak."
+    },
+    {
+        "name": "Pit",
+        "power": 0,
+        "rank": 2,
+        "effect": null,
+        "entryEffect": "Choose a top card: Place it face-up at the bottom of its Stak."
+    },
+    {
+        "name": "Pit",
+        "power": 0,
+        "rank": 2,
+        "effect": null,
+        "entryEffect": "Choose a top card: Place it face-up at the bottom of its Stak."
+    },
+    {
+        "name": "Sidekick",
+        "power": 1,
+        "rank": 1,
+        "effect": null,
+        "entryEffect": "This card falls one place in its Stak."
+    },
+    {
+        "name": "Sidekick",
+        "power": 1,
+        "rank": 1,
+        "effect": null,
+        "entryEffect": "This card falls one place in its Stak."
+    },
+    {
+        "name": "Expel",
+        "power": 4,
+        "rank": 6,
+        "effect": null,
+        "entryEffect": "Choose a player: They discard a card from their hand."
+    },
+    {
+        "name": "Expel",
+        "power": 4,
+        "rank": 6,
+        "effect": null,
+        "entryEffect": "Choose a player: They discard a card from their hand."
+    },
+    {
+        "name": "Begone",
+        "power": 2,
+        "rank": 4,
+        "effect": null,
+        "entryEffect": "Choose any other top card: Return it to its player's hand."
+    },
+    {
+        "name": "Begone",
+        "power": 2,
+        "rank": 4,
+        "effect": null,
+        "entryEffect": "Choose any other top card: Return it to its player's hand."
+    },
+    {
+        "name": "Tranq",
+        "power": 0,
+        "rank": 2,
+        "effect": null,
+        "entryEffect": "Choose any other face-up card: Reset it (Turn it face-down)."
+    },
+    {
+        "name": "Tranq",
+        "power": 0,
+        "rank": 2,
+        "effect": null,
+        "entryEffect": "Choose any other face-up card: Reset it (Turn it face-down)."
+    },
+    {
+        "name": "Leader",
+        "power": "X",
+        "rank": 2,
+        "effect": null,
+        "entryEffect": null
+    },
+    {
+        "name": "Leader",
+        "power": "X",
+        "rank": 2,
+        "effect": null,
+        "entryEffect": null
     }
 ]
