@@ -185,7 +185,7 @@
         "name": "Stomp",
         "power": 7,
         "rank": 6,
-        "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it gets dies.",
+        "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
         "entryEffect": null
     },
     {
@@ -276,15 +276,15 @@
         "name": "Reaper",
         "power": 1,
         "rank": 5,
-        "effect": "Choose any other top card: Discard it.",
-        "entryEffect": null
+        "effect": null,
+        "entryEffect": "Choose any other top card: Discard it."
     },
     {
         "name": "Reaper",
         "power": 1,
         "rank": 5,
-        "effect": "Choose any other top card: Discard it.",
-        "entryEffect": null
+        "effect": null,
+        "entryEffect": "Choose any other top card: Discard it."
     },
     {
         "name": "Clumsy",
