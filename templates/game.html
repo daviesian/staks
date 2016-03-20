@@ -72,7 +72,7 @@ $(function() {
 	  {% endif %}>
 		<!--<h5>Staks</h5>-->
 		{% for p in game.players %}
-			<div class="stak" style="padding-right: {{(p.stak|length)*20+30}}px">
+			<div class="stak selectable" style="padding-right: {{(p.stak|length)*20+30}}px">
 				<h2>{{p.name}}</h2>
 				<ul class="stak">
 					{% for c in p.stak | reverse() %}
@@ -110,6 +110,14 @@ $(function() {
 	{% endif %}
 
 
+</div>
+
+<div class="log">
+	<ul>
+		{% for msg in game.log %}
+			<li>{{msg}}</li>
+		{% endfor %}
+	</ul>
 </div>
 	<!--
 	<h5>Discarded - {{game.discarded | length}}</h5>

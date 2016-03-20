@@ -1,6 +1,8 @@
 
 html,body,.page {
 	height: 100%;
+	font-family: Helvetica, Arial Black, sans;
+
 }
 
 *:focus {
@@ -33,7 +35,8 @@ ul.stak > li:focus {
 }
 
 ul.stak > li.selected > .card {
-	outline: 5px solid rgba(255,255,0,0.5);
+	/*outline: 5px solid rgba(255,255,0,0.5);*/
+	border-color: rgba(255,255,0,0.5);
 }
 
 ul#hand {
@@ -42,6 +45,10 @@ ul#hand {
 
 .on-top {
 	z-index: 10;
+}
+
+.selectable {
+	cursor: pointer;
 }
 
 .controls {

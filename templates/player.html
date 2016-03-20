@@ -8,6 +8,7 @@
 				tabindex={{1+loop.index0}} 
 				onfocus="setHandCardIndex({{loop.index0}})" 
 				onblur="deselectSoon()"
+				class="selectable"
 			{% endif %}>
 			{% include "card.html" %}
 		</li>
