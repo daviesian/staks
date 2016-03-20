@@ -104,7 +104,7 @@ class Game(object):
             card = stak.popleft()
             self.discarded.append(card)
             self._reveal_top_card(player_index)
-            self.log.append("%s discarded a %s (%s) from their stack" % (self.current_player.name, card.name, card.power))
+            self.log.append("%s discarded a %s (%s) from their stack" % (self.players[self.current_player].name, card.name, card.power))
         else:
             print "Shouldn't get here - cannot discard to leave empty stak"
 
@@ -113,7 +113,7 @@ class Game(object):
             hand = self.players[self.current_player].hand
             card = hand.pop(hand_card_index)
             self.discarded.append(card)
-            self.log.append("%s discarded a %s (%s) from their hand" % (self.current_player.name, card.name, card.power))
+            self.log.append("%s discarded a %s (%s) from their hand" % (self.players[self.current_player].name, card.name, card.power))
         else:
             print "Shouldn't get here - cannot discard from empty hand"
 
