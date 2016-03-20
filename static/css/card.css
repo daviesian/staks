@@ -26,6 +26,7 @@
 .card .info-bar .card-name-container {
     flex-grow: 1;
     display: flex;
+    justify-content: center;
 }
 
 .card-name-container .card-name {
@@ -33,6 +34,7 @@
     transform-origin: center;
     margin: auto;
     font-size: 3.5em;
+    white-space: nowrap;
 }
 
 .info-bar .card-level {
