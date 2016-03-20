@@ -257,8 +257,10 @@ def state():
 @app.route("/card")
 def preview_card():
     card_d = {"name": "Hello!", "power": 1, "rank": 1, "effect": "", "entryEffect": ""}
-    card = Card(card_d)
-    return render_template("card_template.html", c=card)
+    card1 = Card(card_d)
+    card2 = Card(card_d)
+    card2.face_up = True
+    return render_template("card_template.html", card1=card1, card2=card2)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0",debug=True, threaded=True)

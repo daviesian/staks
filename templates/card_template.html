@@ -3,8 +3,15 @@
     <link rel="stylesheet" type="text/css" href="/static/css/card.css">
 </head>
 <body>
-    <div style="width:450px; height:700px; border: 1px solid black;">
-        {% include "card.html" %}
+    <div style="width:450px; height:700px; border: 1px solid black;margin: 25px;display:inline-block;">
+        {% with c = card1 %}
+            {% include "card.html" %}
+        {% endwith %}
+    </div>
+    <div style="width:450px; height:700px; border: 1px solid black;margin: 25px;display:inline-block;">
+        {% with c = card2 %}
+            {% include "card.html" %}
+        {% endwith %}
     </div>
 </body>
 </html>

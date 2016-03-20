@@ -3,6 +3,9 @@
     height: 100%;
     background-color: #cccccc;
     display: flex;
+    box-sizing: border-box;
+    border: 10px solid black;
+    border-radius: 25px;
 }
 
 .card.facedown {
@@ -16,11 +19,14 @@
     background-color: #999999;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 15px 0px 0px 15px;
 }
 .card .card-body {
     flex-grow: 1;
-    display: flex;
+  /*  display: flex;
     align-items: center;
+    justify-content: center;*/
 }
 
 .card .info-bar .card-name-container {
@@ -58,11 +64,43 @@
 }
 
 .card .card-image-container {
-    width: 33%;
+    width: 75%;
+    height: 40%;
+    margin: auto;
+    margin-top: 33%;
 }
 .card .card-image {
     width: 100%;
-    height: 0;
-    padding: 33%;
+    height: 100%;
+}
+
+.card-image.giraffe {
+    background: url(/static/animals.svg#giraffe);
+}
+.card-image.panda {
+    background: url(/static/animals.svg#panda);
+}
+.card-image.parrot {
+    background: url(/static/animals.svg#parrot);
+}
+.card-image.penguin {
+    background: url(/static/animals.svg#penguin);
+}
+.card-image.monkey {
+    background: url(/static/animals.svg#monkey);
+}
+.card-image.rabbit {
+    background: url(/static/animals.svg#rabbit);
+}
+.card-image.snake {
     background: url(/static/animals.svg#snake);
+}
+.card-image.hippo {
+    background: url(/static/animals.svg#hippo);
+}
+.card-image.pig {
+    background: url(/static/animals.svg#pig);
+}
+.card-image.elephant {
+    background: url(/static/animals.svg#elephant);
 }

@@ -1,3 +1,4 @@
+{% if c.face_up %}
 <div class="card">
     <div class="info-bar">
         <div class="card-level">
@@ -19,3 +20,7 @@
         </div>
     </div>
 </div>
+{% else %}
+<div class="card facedown">
+</div>
+{% endif %}
