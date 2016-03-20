@@ -1,8 +1,21 @@
 <div class="card">
-	{% if c.face_up %} 
-		{{c.name}} - Power {{c.power}} {% if c.health < c.power %}(Health {{c.health}}){% endif %}
-	{% else %}
-		[HIDDEN]
-	{% endif %}
-
+    <div class="info-bar">
+        <div class="card-level">
+            {{c.power}}
+        </div>
+        <div class="card-name-container">
+            <div class="card-name">
+                {{c.name}}
+            </div>
+        </div>
+        <div class="card-rank">
+            1
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="card-image-container">
+            <div class="card-image panda">
+            </div>
+        </div>
+    </div>
 </div>

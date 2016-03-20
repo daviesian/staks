@@ -1,0 +1,66 @@
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc;
+    display: flex;
+}
+
+.card.facedown {
+    background-image: url(/static/card_back.svg);
+    background-size: cover;
+}
+
+.card .info-bar {
+    height: 100%;
+    width: 20%;
+    background-color: #999999;
+    display: flex;
+    flex-direction: column;
+}
+.card .card-body {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.card .info-bar .card-name-container {
+    flex-grow: 1;
+    display: flex;
+}
+
+.card-name-container .card-name {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    margin: auto;
+    font-size: 3.5em;
+}
+
+.info-bar .card-level {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    padding: 50% 0;
+    border-radius: 50%;
+    background: #38a9e4;
+    color: white;
+    font-family: Helvetica, Arial Black, sans;
+    font-size: 48px;
+    text-align: center;
+    line-height: 0px;
+    border: 5px solid black;
+}
+
+.info-bar .card-rank {
+    height: 10%;
+}
+
+.card .card-image-container {
+    width: 33%;
+}
+.card .card-image {
+    width: 100%;
+    height: 0;
+    padding: 33%;
+    background: url(/static/animals.svg#snake);
+}

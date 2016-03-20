@@ -254,6 +254,12 @@ def state():
 
     return render_template("app.html", game=game, player=player, pid=pid)
 
+@app.route("/card")
+def preview_card():
+    card_d = {"name": "Hello!", "power": 1, "rank": 1, "effect": "", "entryEffect": ""}
+    card = Card(card_d)
+    return render_template("card_template.html", c=card)
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0",debug=True, threaded=True)
 
