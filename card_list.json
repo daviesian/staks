@@ -4,419 +4,479 @@
         "power": 1,
         "rank": 1,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 1,
         "rank": 1,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 2,
         "rank": 2,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 2,
         "rank": 2,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 3,
         "rank": 3,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 3,
         "rank": 3,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 4,
         "rank": 4,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 4,
         "rank": 4,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 5,
         "rank": 5,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 5,
         "rank": 5,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 6,
         "rank": 6,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Core",
         "power": 6,
         "rank": 6,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "panda"
     },
     {
         "name": "Shot V1",
         "power": 0,
         "rank": 1,
         "effect": null,
-        "entryEffect": "Choose a top card: It takes 1 damage."
+        "entryEffect": "Choose a top card: It takes 1 damage.",
+        "image": "snake"
     },
     {
         "name": "Shot V1",
         "power": 0,
         "rank": 1,
         "effect": null,
-        "entryEffect": "Choose a top card: It takes 1 damage."
+        "entryEffect": "Choose a top card: It takes 1 damage.",
+        "image": "snake"
     },
     {
         "name": "Shot V1",
         "power": 0,
         "rank": 1,
         "effect": null,
-        "entryEffect": "Choose a top card: It takes 1 damage."
+        "entryEffect": "Choose a top card: It takes 1 damage.",
+        "image": "snake"
     },
     {
         "name": "Shot V1",
         "power": 0,
         "rank": 1,
         "effect": null,
-        "entryEffect": "Choose a top card: It takes 1 damage."
+        "entryEffect": "Choose a top card: It takes 1 damage.",
+        "image": "snake"
     },
     {
         "name": "Shot V2",
         "power": 0,
         "rank": 2,
         "effect": null,
-        "entryEffect": "Choose a top card: It takes 2 damage."
+        "entryEffect": "Choose a top card: It takes 2 damage.",
+        "image": "snake"
     },
     {
         "name": "Shot V2",
         "power": 0,
         "rank": 2,
         "effect": null,
-        "entryEffect": "Choose a top card: It takes 2 damage."
+        "entryEffect": "Choose a top card: It takes 2 damage.",
+        "image": "snake"
     },
     {
         "name": "Shot V3",
         "power": 0,
         "rank": 3,
         "effect": null,
-        "entryEffect": "Choose a top card: It takes 3 damage."
+        "entryEffect": "Choose a top card: It takes 3 damage.",
+        "image": "snake"
     },
     {
         "name": "Shot V3",
         "power": 0,
         "rank": 3,
         "effect": null,
-        "entryEffect": "Choose a top card: It takes 3 damage."
+        "entryEffect": "Choose a top card: It takes 3 damage.",
+        "image": "snake"
     },
     {
         "name": "Shot V4",
         "power": 0,
         "rank": 4,
         "effect": null,
-        "entryEffect": "Choose a top card: It takes 4 damage."
+        "entryEffect": "Choose a top card: It takes 4 damage.",
+        "image": "snake"
     },
     {
         "name": "Shot V4",
         "power": 0,
         "rank": 4,
         "effect": null,
-        "entryEffect": "Choose a top card: It takes 4 damage."
+        "entryEffect": "Choose a top card: It takes 4 damage.",
+        "image": "snake"
     },
     {
         "name": "Stomp",
         "power": 5,
         "rank": 4,
         "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "elephant"
     },
     {
         "name": "Stomp",
         "power": 5,
         "rank": 4,
         "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "elephant"
     },
     {
         "name": "Stomp",
         "power": 6,
         "rank": 5,
         "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "elephant"
     },
     {
         "name": "Stomp",
         "power": 6,
         "rank": 5,
         "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
-        "entryEffect": null
-    },
-    {
-        "name": "Stomp",
-        "power": 7,
-        "rank": 6,
-        "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "elephant"
     },
     {
         "name": "Stomp",
         "power": 7,
         "rank": 6,
         "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "elephant"
+    },
+    {
+        "name": "Stomp",
+        "power": 7,
+        "rank": 6,
+        "effect": "Stomp: Once it attacks it keeps battling the same Stak, until an effect stops it or it dies.",
+        "entryEffect": null,
+        "image": "elephant"
     },
     {
         "name": "Bash",
         "power": 2,
         "rank": 5,
         "effect": "Bash Damage: Damage a card and the bottom card of its Stak must be discarded.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "monkey"
     },
     {
         "name": "Bash",
         "power": 2,
         "rank": 5,
         "effect": "Bash Damage: Damage a card and the bottom card of its Stak must be discarded.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "monkey"
     },
     {
         "name": "Bash",
         "power": 3,
         "rank": 6,
         "effect": "Bash Damage: Damage a card and the bottom card of its Stak must be discarded.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "monkey"
     },
     {
         "name": "Bash",
         "power": 3,
         "rank": 6,
         "effect": "Bash Damage: Damage a card and the bottom card of its Stak must be discarded.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "monkey"
     },
     {
         "name": "Spike",
         "power": 1,
         "rank": 4,
         "effect": "Spike Damage: Damage a card and the first card below it must be discarded.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "parrot"
     },
     {
         "name": "Spike",
         "power": 2,
         "rank": 5,
         "effect": "Spike Damage: Damage a card and the first card below it must be discarded.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "parrot"
     },
     {
         "name": "Spike",
         "power": 3,
         "rank": 6,
         "effect": "Spike Damage: Damage a card and the first card below it must be discarded.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "parrot"
     },
     {
         "name": "Fatal",
         "power": 1,
         "rank": 3,
         "effect": "Fatal Damage: Discard any card damaged by this one.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "rabbit"
     },
     {
         "name": "Fatal",
         "power": 1,
         "rank": 3,
         "effect": "Fatal Damage: Discard any card damaged by this one.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "rabbit"
     },
     {
         "name": "Fatal",
         "power": 1,
         "rank": 3,
         "effect": "Fatal Damage: Discard any card damaged by this one.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "rabbit"
     },
     {
         "name": "Fatal",
         "power": 1,
         "rank": 3,
         "effect": "Fatal Damage: Discard any card damaged by this one.",
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "rabbit"
     },
     {
         "name": "Reaper",
         "power": 1,
         "rank": 5,
         "effect": null,
-        "entryEffect": "Choose any other top card: Discard it."
+        "entryEffect": "Choose any other top card: Discard it.",
+        "image": "rabbit"
     },
     {
         "name": "Reaper",
         "power": 1,
         "rank": 5,
         "effect": null,
-        "entryEffect": "Choose any other top card: Discard it."
+        "entryEffect": "Choose any other top card: Discard it.",
+        "image": "rabbit"
     },
     {
         "name": "Clumsy",
         "power": 6,
         "rank": 3,
         "effect": null,
-        "entryEffect": "Bash this Stak: Discard the bottom card of this Stak."
+        "entryEffect": "Bash this Stak: Discard the bottom card of this Stak.",
+        "image": "hippo"
     },
     {
         "name": "Clumsy",
         "power": 6,
         "rank": 3,
         "effect": null,
-        "entryEffect": "Bash this Stak: Discard the bottom card of this Stak."
+        "entryEffect": "Bash this Stak: Discard the bottom card of this Stak.",
+        "image": "hippo"
     },
     {
         "name": "Bountiful",
         "power": 1,
         "rank": 4,
         "effect": null,
-        "entryEffect": "Draw a card."
+        "entryEffect": "Draw a card.",
+        "image": "penguin"
     },
     {
         "name": "Bountiful",
         "power": 2,
         "rank": 5,
         "effect": null,
-        "entryEffect": "Draw a card."
+        "entryEffect": "Draw a card.",
+        "image": "penguin"
     },
     {
         "name": "Bountiful",
         "power": 3,
         "rank": 6,
         "effect": null,
-        "entryEffect": "Draw a card."
+        "entryEffect": "Draw a card.",
+        "image": "penguin"
     },
     {
         "name": "Trip",
         "power": 0,
         "rank": 1,
         "effect": null,
-        "entryEffect": "Choose a top card: It falls one place in its Stak."
+        "entryEffect": "Choose a top card: It falls one place in its Stak.",
+        "image": "giraffe"
     },
     {
         "name": "Trip",
         "power": 0,
         "rank": 1,
         "effect": null,
-        "entryEffect": "Choose a top card: It falls one place in its Stak."
+        "entryEffect": "Choose a top card: It falls one place in its Stak.",
+        "image": "giraffe"
     },
     {
         "name": "Pit",
         "power": 0,
         "rank": 2,
         "effect": null,
-        "entryEffect": "Choose a top card: Place it face-up at the bottom of its Stak."
+        "entryEffect": "Choose a top card: Place it face-up at the bottom of its Stak.",
+        "image": "giraffe"
     },
     {
         "name": "Pit",
         "power": 0,
         "rank": 2,
         "effect": null,
-        "entryEffect": "Choose a top card: Place it face-up at the bottom of its Stak."
+        "entryEffect": "Choose a top card: Place it face-up at the bottom of its Stak.",
+        "image": "giraffe"
     },
     {
         "name": "Sidekick",
         "power": 1,
         "rank": 1,
         "effect": null,
-        "entryEffect": "This card falls one place in its Stak."
+        "entryEffect": "This card falls one place in its Stak.",
+        "image": "pig"
     },
     {
         "name": "Sidekick",
         "power": 1,
         "rank": 1,
         "effect": null,
-        "entryEffect": "This card falls one place in its Stak."
+        "entryEffect": "This card falls one place in its Stak.",
+        "image": "pig"
     },
     {
         "name": "Expel",
         "power": 4,
         "rank": 6,
         "effect": null,
-        "entryEffect": "Choose a player: They discard a card from their hand."
+        "entryEffect": "Choose a player: They discard a card from their hand.",
+        "image": "pig"
     },
     {
         "name": "Expel",
         "power": 4,
         "rank": 6,
         "effect": null,
-        "entryEffect": "Choose a player: They discard a card from their hand."
+        "entryEffect": "Choose a player: They discard a card from their hand.",
+        "image": "pig"
     },
     {
         "name": "Begone",
         "power": 2,
         "rank": 4,
         "effect": null,
-        "entryEffect": "Choose any other top card: Return it to its player's hand."
+        "entryEffect": "Choose any other top card: Return it to its player's hand.",
+        "image": "pig"
     },
     {
         "name": "Begone",
         "power": 2,
         "rank": 4,
         "effect": null,
-        "entryEffect": "Choose any other top card: Return it to its player's hand."
+        "entryEffect": "Choose any other top card: Return it to its player's hand.",
+        "image": "pig"
     },
     {
         "name": "Tranq",
         "power": 0,
         "rank": 2,
         "effect": null,
-        "entryEffect": "Choose any other face-up card: Reset it (Turn it face-down)."
+        "entryEffect": "Choose any other face-up card: Reset it (Turn it face-down).",
+        "image": "parrot"
     },
     {
         "name": "Tranq",
         "power": 0,
         "rank": 2,
         "effect": null,
-        "entryEffect": "Choose any other face-up card: Reset it (Turn it face-down)."
+        "entryEffect": "Choose any other face-up card: Reset it (Turn it face-down).",
+        "image": "parrot"
     },
     {
         "name": "Leader",
         "power": "X",
         "rank": 2,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "parrot"
     },
     {
         "name": "Leader",
         "power": "X",
         "rank": 2,
         "effect": null,
-        "entryEffect": null
+        "entryEffect": null,
+        "image": "parrot"
     }
 ]

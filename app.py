@@ -18,6 +18,7 @@ class Card(object):
         self.rank = c["rank"]
         self.effect = c["effect"]
         self.entry_effect = c["entryEffect"]
+        self.image = c["image"]
 
         self.face_up = False
         # At the beginning of every turn, set the health of every face-up card to its power.
@@ -260,7 +261,7 @@ def state():
 
 @app.route("/card")
 def preview_card():
-    card_d = {"name": "Hello!", "power": 1, "rank": 1, "effect": "", "entryEffect": ""}
+    card_d = {"name": "Hello!", "power": 1, "rank": 1, "effect": "", "entryEffect": "", "image": "parrot"}
     card1 = Card(card_d)
     card2 = Card(card_d)
     card2.face_up = True
