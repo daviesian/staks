@@ -1,3 +1,8 @@
 <div class="card">
-Card content goes here
+	{% if c.face_up %} 
+		{{c.name}} - Power {{c.power}} {% if c.health < c.power %}(Health {{c.health}}){% endif %}
+	{% else %}
+		[HIDDEN]
+	{% endif %}
+
 </div>

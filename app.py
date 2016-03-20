@@ -48,7 +48,9 @@ class GamePlayer(User):
 
         self.hand = []
         for i in range(2):
-            self.hand.append(deck.pop())
+            h = deck.pop()
+            h.face_up = True
+            self.hand.append(h)
 
         self.stak = deque()
         for i in range(9):
@@ -141,7 +143,11 @@ class Game(object):
                 c.health = c.power
 
             self.current_player = (self.current_player + 1) % len(self.players)
-            self.players[self.current_player].hand.append(self.deck.pop())
+
+            h = self.deck.pop()
+            h.face_up = True
+            self.players[self.current_player].hand.append(h)
+            
             self.initial_turn_discard_count = len(self.discarded)
             self.attacking_card = None
         else:

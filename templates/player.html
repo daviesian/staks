@@ -1,18 +1,25 @@
-<h3>{{player.name}}</h3>
+<!--<h3>{{player.name}}</h3>
 
-<h5>Hand</h5>
-<ul>
+<h5>Hand</h5>-->
+<ul id="hand" class="stak">
 	{% for c in player.hand %}
-		<li>
-			{{c.name}} - Power {{c.power}}
+		<li style="left: {{loop.index0*20}}px; transform: rotate({{(loop.index0-(loop.length-0.5)/2)*10}}deg);" 
 			{% if player == game.get_current_player() %}
-				<button type="button" onclick="go('/play_card?index={{loop.index0}}')">Play</button>
-				<button type="button" onclick="go('/discard_hand_card?index={{loop.index0}}')">Discard</button>
-			{% endif %}
+				tabindex={{1+loop.index0}} 
+				onfocus="setHandCardIndex({{loop.index0}})" 
+				onblur="deselectSoon()"
+			{% endif %}>
+			{% include "card.html" %}
 		</li>
 	{% endfor %}
 </ul>
-{% if player == game.get_current_player() and game.can_end_turn() %}
-	<button type="button" onclick="go('/next_turn')">End turn</button>
-{% endif %}
 
+{% if player == game.get_current_player() %}
+<div id="handControls" class="controls">
+	<button type="button" onclick="go('/play_card?index='+handCardIndex)">Play</button>
+	<button type="button" onclick="go('/discard_hand_card?index='+handCardIndex)">Discard</button>
+	{% if game.can_end_turn() %}
+		<button type="button" onclick="go('/next_turn')">End turn</button>
+	{% endif %}
+</div>
+{% endif %}

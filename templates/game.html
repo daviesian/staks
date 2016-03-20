@@ -13,49 +13,114 @@
 	</ul>
 </div>
 
-{% if player %}
-	<div style="display:inline-block;vertical-align: top;">
-		{% include "player.html" %}
+<script>
+
+var selected = null;
+var handCardIndex = null;
+var deselectTimeout = null;
+
+function setHandCardIndex(index) {
+	selected = "hand";
+	handCardIndex = index;
+	clearTimeout(deselectTimeout);
+
+	$(".on-top").removeClass("on-top");
+	$(".selected").removeClass("selected");
+	$($("#hand").children().get(index)).addClass("on-top").addClass("selected");
+
+	$(".controls").hide();
+	$("#handControls").show();
+}
+
+function selectStak() {
+	selected = "stak";
+	clearTimeout(deselectTimeout);
+
+	$(".selected").removeClass("selected");
+	$("#staktop").addClass("selected");
+
+	$(".controls").hide();
+	$("#stakControls").show();
+}
+
+function deselectSoon() {
+
+	deselectTimeout = setTimeout(function() {
+		selected = null;
+		$(".selected").removeClass("selected");
+		$(".controls").hide();
+	}, 0);
+}
+
+$(function() {
+	// Why do we need this?! They should be hidden by default!
+	$(".controls").hide();
+
+	$("body").on("focus", "button", function() {
+		clearTimeout(deselectTimeout);
+	})
+})
+</script>
+
+<div class="container">
+
+	<div class="staks" 
+	  {% if player == game.get_current_player() %} 
+	  	onfocus="selectStak()"
+	  	onblur="deselectSoon()"
+	  	tabindex={{ loop.index0 }} 
+	  {% endif %}>
+		<!--<h5>Staks</h5>-->
+		{% for p in game.players %}
+			<div class="stak" style="padding-right: {{(p.stak|length)*20+30}}px">
+				<h2>{{p.name}}</h2>
+				<ul class="stak">
+					{% for c in p.stak | reverse() %}
+						<li style="left:{{loop.index0*20}}px; /*transform: rotate({{loop.index0-loop.length/2}}deg);*/"  
+						  {% if loop.last and player == game.get_current_player() and p == player %} 
+						    id="staktop"
+						  {% endif %}>
+							{% include "card.html" %}
+
+							{% if loop.last and player == game.get_current_player() and p == player %}
+								<div class="controls" id="stakControls">
+									<button type="button" onclick="go('/discard_stak_card')">Discard</button>
+
+									{% for target in game.players%}
+										{% if game.can_attack(loop.index0) %}
+											<button type="button" onclick="go('/attack?targetPlayerIndex={{loop.index0}}')">Attack {{target.name}}</button>
+										{% endif %}
+									{% endfor %}
+										{% if game.can_end_turn() %}
+											<button type="button" onclick="go('/next_turn')">End turn</button>
+										{% endif %}
+								</div>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		{% endfor %}
 	</div>
-{% endif %}
+
+	{% if player %}
+		<div>
+			{% include "player.html" %}
+		</div>
+	{% endif %}
 
 
-<h5>Staks</h5>
-{% for p in game.players %}
-	<div style="display:inline-block;vertical-align: top;">
-		<h6>{{p.name}}</h6>
-		<ul>
-			{% for c in p.stak %}
-				<li>
-					{% if c.face_up %} 
-						{{c.name}} - Power {{c.power}} {% if c.health < c.power %}(Health {{c.health}}){% endif %}
-						{% if loop.first and player == game.get_current_player() and p == player %}
-							<button type="button" onclick="go('/discard_stak_card')">Discard</button>
-
-							{% for target in game.players%}
-								{% if game.can_attack(loop.index0) %}
-									<button type="button" onclick="go('/attack?targetPlayerIndex={{loop.index0}}')">Attack {{target.name}}</button>
-								{% endif %}
-							{% endfor %}
-						{% endif %}
-					{% else %}
-						[HIDDEN]
-					{% endif %}
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
-{% endfor %}
-
-<h5>Discarded - {{game.discarded | length}}</h5>
-<ul>
-{% for c in game.discarded %}
-	<li>{{c.name}} - Power {{c.power}}</li>
-{% endfor %}
-</ul>
+</div>
+	<!--
+	<h5>Discarded - {{game.discarded | length}}</h5>
+	<ul>
+	{% for c in game.discarded %}
+		<li>{{c.name}} - Power {{c.power}}</li>
+	{% endfor %}
+	</ul>
 
 
-
+	-->
 
 
 
